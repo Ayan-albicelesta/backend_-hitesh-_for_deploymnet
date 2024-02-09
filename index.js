@@ -18,6 +18,10 @@ app.get('/twitter',(req,res)=>{
   res.send('coffe with code')
 })
 
+app.get('/facebook',(req,res)=>{
+    res.json({user:"jon snow",passowrd:"mother_of_dragon"})
+})
+
 app.listen(process.env.PORT,()=>{
    console.log(`listening on port no ${process.env.PORT}`);
 })
